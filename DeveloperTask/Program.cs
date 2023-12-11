@@ -8,8 +8,6 @@ namespace DevTask
     {
         public static void Main() 
         {
-            var c = VehicleViewer.SearchForVehicles("Ca");
-            VehicleViewer.SaveVehicles();
 
         }
     }
