@@ -1,5 +1,6 @@
 ﻿using DeveloperTask.Task1;
 using DeveloperTask.Task2;
+using DeveloperTask.Task3;
 
 namespace DevTask
 {
@@ -7,7 +8,7 @@ namespace DevTask
     {
         public static void Main() 
         {
-            var inst = InstanceService<Vehicle>.GetInstances();
+            VehicleViewer.ViewVehicles();
         }
     }
 }
