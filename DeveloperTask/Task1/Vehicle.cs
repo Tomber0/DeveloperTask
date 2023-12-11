@@ -54,5 +54,10 @@
             Name = name;
             PassengerCount = passengerCount;
         }
+
+        public override string ToString()
+        {
+            return $"Name: {Name}; Top speed: {TopSpeed}; Passenger count: {PassengerCount}";
+        }
     }
 }
