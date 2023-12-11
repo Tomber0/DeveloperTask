@@ -35,7 +35,7 @@
             {
                 if (value < 0.0)
                 {
-                    throw new ArgumentException($"Vehicle speed can't be lower than 0.0, {value} was provided");
+                    throw new ArgumentException($"Vehicle speed can't be lower than 0, {value} was provided");
                 }
                 else 
                 {
