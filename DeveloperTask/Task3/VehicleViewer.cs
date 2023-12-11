@@ -16,7 +16,7 @@ namespace DeveloperTask.Task3
 
         public static IEnumerable<Vehicle> SearchForVehicles(string namePart) 
         {
-            return InstanceService<Vehicle>.GetInstances().Where(i => i.GetType().Name.Contains(namePart)).ToList();
+            return InstanceService<Vehicle>.GetInstances().Where(i => i.GetType().Name.ToLower().Contains(namePart.ToLower())).ToList();
         }
     }
 }
