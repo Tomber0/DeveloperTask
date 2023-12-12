@@ -9,7 +9,7 @@ namespace DevTask
     {
         public static void Main() 
         {
-            var c = Problems.ReverseString("ABC");
+            var c = Problems.IsPalindrome("ABBA");
             Console.WriteLine(c);
         }
     }
