@@ -9,7 +9,7 @@ namespace DevTask
     {
         public static void Main() 
         {
-            var c = Problems.MissingElements(new int[] {1,3,9 });
+            var c = Problems.MissingElements(new int[] {2,3,5 });
         }
     }
 }

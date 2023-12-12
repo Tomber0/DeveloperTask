@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Text;
 
 namespace DeveloperTask.Task4
@@ -30,9 +31,13 @@ namespace DeveloperTask.Task4
         public static IEnumerable<int> MissingElements(int[] arr) 
         {
             var lowestElement = arr[0];
-            var higestElement = arr[arr.Length-1];
-            var elems = Enumerable.Range(lowestElement, higestElement);
-            return elems.Except(arr).ToList();
+            var higestElement = arr[arr.Length - 1];
+            List<int> seq = new();
+            for (int i = arr[0]; i <= arr[arr.Length - 1]; i++)
+            {
+                seq.Add(i);
+            }
+            return seq.Except(arr).ToList();
         }
     }
 }
