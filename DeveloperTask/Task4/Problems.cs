@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Linq;
+using System.Text;
 
 namespace DeveloperTask.Task4
 {
@@ -24,6 +25,14 @@ namespace DeveloperTask.Task4
                 }
             }
             return true;
+        }
+
+        public static IEnumerable<int> MissingElements(int[] arr) 
+        {
+            var lowestElement = arr[0];
+            var higestElement = arr[arr.Length-1];
+            var elems = Enumerable.Range(lowestElement, higestElement);
+            return elems.Except(arr).ToList();
         }
     }
 }

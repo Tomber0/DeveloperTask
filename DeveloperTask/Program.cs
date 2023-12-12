@@ -9,8 +9,7 @@ namespace DevTask
     {
         public static void Main() 
         {
-            var c = Problems.IsPalindrome("ABBA");
-            Console.WriteLine(c);
+            var c = Problems.MissingElements(new int[] {1,3,9 });
         }
     }
 }
